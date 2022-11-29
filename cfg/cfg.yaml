@@ -1,0 +1,33 @@
+app:
+  name: k8s-platform
+  mode: dev
+  port: 8081
+  version: v0.0.1
+
+kubernetes:
+  kube_config: cfg/config
+
+log:
+  level: debug
+  filename: logs/k8s-platfrom.log
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  enable: true
+  host: 42.56.85.153
+  port: 3306
+  user: root
+  password: baduGuaGua2021
+  dbname: bluebell
+  max_open_conns: 200
+  max_idle_conns: 50
+
+redis:
+  enable: true
+  host: 42.56.85.153
+  port: 6379
+  password: baduGuaGua2021
+  db: 0
+  pool_size: 100
